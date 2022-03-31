@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 96vh 4vh;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px
+}
+
+main {
+    background-color: var(--PaleBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 13px;
+}
+
+.card .card-header img {
+    width: 100%;
+    border-radius: 13px 13px 0px 0px;
+}
+
+.card .card-resume h1 {
+    padding-top: 20px;
+    color: var(--DarkBlue);
+    font-weight: 900;
+}
+
+.card .card-resume p {
+    padding: 20px 0;
+    color: gray;
+}
+
+.card .card-payment {
+    background: var(--VeryPaleBlue);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+    padding: 15px;
+}
+
+.card .card-payment .details {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.card .card-payment .details strong {
+    color: var(--DarkBlue);
+    font-weight: 700;
+}
+
+.card .card-payment a {
+    font-size: 0.9rem;
+    color: blue;
+}
+
+.card .card-payment a:hover {
+    color: var(--DesaturatedBlue)
+}
+
+.card .card-footer {
+    margin: 10px 30px 30px;
+}
+.card .card-footer a{
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 7px;
+    border-radius: 10px;
+    color: gray;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.card .card-footer a#confirm{
+    display: block;
+    background-color: var(--BrightBlue);
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.card .card-footer a#confirm:hover{
+    background-color: var(--DarkBlue);
+}
+
+.card .card-footer a:hover{
+    color: black;
+}
+
+
+
+
+
+footer { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    font-size: 14px;
+}
+
+footer > a {
+     color: hsl(228, 45%, 44%); 
+}
+
