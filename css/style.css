@@ -20,11 +20,16 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 96vh 4vh;
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 16px
+    font-size: 16px;
+
+    background-color: var(--PaleBlue);
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
 }
 
 main {
-    background-color: var(--PaleBlue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,6 +93,7 @@ main {
 .card .card-footer {
     margin: 10px 30px 30px;
 }
+
 .card .card-footer a{
     display: block;
     width: 100%;
@@ -118,10 +124,6 @@ main {
     color: black;
 }
 
-
-
-
-
 footer { 
     display: flex;
     justify-content: center;
@@ -133,4 +135,3 @@ footer {
 footer > a {
      color: hsl(228, 45%, 44%); 
 }
-

@@ -1,0 +1,39 @@
+@media (max-width: 400px) {
+
+    body {
+        background-color: var(--PaleBlue);
+        background-image: url(../images/pattern-background-mobile.svg);
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: 100% 80vh;
+    }
+
+    .card {
+        width: 85%;
+    }
+
+    .card .card-payment {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 376px) {
+    .card .card-resume p {
+    padding: 20px 30px;
+    color: gray;
+    }
+}
+
+@media (min-height: 1000px) {
+    body {
+        background-color: var(--PaleBlue);
+        background-image: url(../images/pattern-background-mobile.svg);
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: 100% 60%;
+    }
+}
